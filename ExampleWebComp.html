@@ -115,12 +115,22 @@
 
                     window.customElements.define('hello-world', HelloWorld);
             </script>
+            <!-- Custom Element Hello World -->
             <hello-world value="five" test="test1"></hello-world>
+        
+            <!-- Normal Hello World -->
             <h1>Normal Hello World</h1>
 
             <div>Trying out an increment and decrement button</div>
             <div class="main-table">
+                
                 <!-- Potential candidate for a web component -->
+                <!-- Any group of HTML Element when presented in a certain format increases the usability -->
+                <!-- can be considered for a web component.  -->
+                <!-- We really don't need any framework to achieve the reusablility and modularity -->
+                <!-- React and Angular shouldn't be considered for reusable web components -->
+                <!-- As the browsers getting more powerful we will reach a point where we can do all things in a better way using browser apis -->
+                
                 <div class="counter-container-with-label" property="first">
                     <span>Increment Decrement</span>
                     <div class="counter-container">
@@ -156,7 +166,8 @@
                     console.log(" Class present :- " + el.classList.toString());
                     console.log(" Property Attribute :- " + el.getAttribute('property'));
                 }
-
+                
+                //library module. This is how previously we used to create JS modules
                 ((cb) => {   
                     const incrementObjAray = document.querySelectorAll(".increment");
                     const decrementObjAray = document.querySelectorAll(".decrement");
